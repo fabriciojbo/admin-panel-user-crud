@@ -18,7 +18,13 @@ function json(data: unknown, status = 200) {
     headers: { "Cache-Control": "no-store" },
   });
 }
+
+export const config: Config = {
+  path: ["/api/session", "/api/users", "/api/roles", "/api/permissions"],
+};
+
 export default async (req: Request) => {
+  const c = config;
   try {
     const path = new URL(req.url).pathname;
     if (
