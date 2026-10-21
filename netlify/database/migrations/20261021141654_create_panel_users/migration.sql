@@ -9,5 +9,5 @@ CREATE TABLE "panel_users" (
 );
 
 INSERT INTO panel_users (id, name, email, role, active)
-VALUES ('seed-admin', 'Administrador', 'admin@mega.local', 'admin', true)
+VALUES ('seed-admin', 'Administrador', 'fabriciojbo@gmail.com', 'admin', true)
 ON CONFLICT (id) DO NOTHING;

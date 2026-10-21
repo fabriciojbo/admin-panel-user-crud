@@ -22,7 +22,7 @@ O build e as validações são executados pelo pipeline da plataforma.
 
 ## Regras e permissões (RBAC)
 
-O Postgres mantém usuários, regras e permissões em tabelas relacionais, com chaves estrangeiras e tabelas de associação muitos para muitos. Os códigos de permissão são únicos. A migração RBAC adiciona a regra protegida Admin e as permissões users:read, users:write, roles:read e roles:write, vinculando admin@mega.local e preservando o acesso dos administradores existentes.
+O Postgres mantém usuários, regras e permissões em tabelas relacionais, com chaves estrangeiras e tabelas de associação muitos para muitos. Os códigos de permissão são únicos. A migração RBAC adiciona a regra protegida Admin e as permissões users:read, users:write, roles:read e roles:write, vinculando fabriciojbo@gmail.com e preservando o acesso dos administradores existentes.
 
 As páginas /users, /roles e /permissions usam o mesmo painel autenticado. Os menus aparecem somente para quem possui permissões da área correspondente. Leitura e escrita são verificadas separadamente; users:* e roles:* também podem representar todas as ações da respectiva área. O acesso direto por URL sem permissão mostra “Privilégios insuficientes”. Gerenciar permissões utiliza roles:read e roles:write. Atribuir regras a usuários exige users:write e roles:write.
 

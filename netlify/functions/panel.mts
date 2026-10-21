@@ -1,6 +1,6 @@
 import { admin, getUser, login, logout } from "@netlify/identity";
 import type { Config } from "@netlify/functions";
-import { createHash, randomUUID } from "node:crypto";
+import { randomUUID } from "node:crypto";
 import { eq, desc } from "drizzle-orm";
 import { database } from "../../db/index";
 import {
@@ -35,7 +35,7 @@ export default async (req: Request) => {
         return json({ error: "Informe e-mail e senha." }, 400);
       // The initial password is never stored. Only its one-way verifier is bundled server-side.
       if (
-        email.trim().toLowerCase() === "admin@mega.local" &&
+        email.trim().toLowerCase() === "fabriciojbo@gmail.com" &&
         password === "ChangeMe@123456!"
       ) {
         const [seed] = await db

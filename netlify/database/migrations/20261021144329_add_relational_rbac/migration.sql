@@ -40,4 +40,4 @@ INSERT INTO panel_role_permissions (role_id, permission_id)
  SELECT 'seed-role-admin', id FROM panel_permissions;
 --> statement-breakpoint
 INSERT INTO panel_user_roles (user_id, role_id)
- SELECT id, 'seed-role-admin' FROM panel_users WHERE role = 'admin' OR email = 'admin@mega.local';
+ SELECT id, 'seed-role-admin' FROM panel_users WHERE role = 'admin' OR email = 'fabriciojbo@gmail.com';
