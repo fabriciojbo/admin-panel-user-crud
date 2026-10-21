@@ -11,7 +11,7 @@ import {
   rolePermissions,
 } from "../../db/schema";
 import { accessFor, allows } from "../../db/rbac";
-
+// Função para retornar JSON com cache desativado
 function json(data: unknown, status = 200) {
   return Response.json(data, {
     status,
